@@ -28,6 +28,7 @@ app.post("/submit", async (req, res) => {
     const newUser = new User({
       name: req.body.name,
       email: req.body.email,
+      phon: req.body.phon,
     });
 
     await newUser.save(); // Save data in MongoDB
